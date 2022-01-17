@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="44e855e6-0301-475f-86c6-3c1d5be252cb" name="kashizar@CRLHL-KASHIZAR1 2021-12-28 16:23:36" runUser="TL\kashizar" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2021-12-28T16:23:36.1455199+05:00" queuing="2021-12-28T16:23:36.1455199+05:00" start="2021-12-28T16:23:21.1146686+05:00" finish="2021-12-28T16:23:36.1628553+05:00" />
+  <TestSettings name="default" id="2afa2e85-9ab8-4947-b516-585a74485015">
+    <Deployment runDeploymentRoot="kashizar_CRLHL-KASHIZAR1_2021-12-28_16_23_36" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="e91d6caa-897d-44ca-8ced-afd444593048" testId="7e6b3136-39c9-467c-a7fc-beeea7c17f9e" testName="login_TC01" computerName="CRLHL-KASHIZAR1" duration="00:00:07.0301171" startTime="2021-12-28T16:23:22.0977578+05:00" endTime="2021-12-28T16:23:35.8584194+05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e91d6caa-897d-44ca-8ced-afd444593048" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="login_TC01" storage="c:\users\kashizar\source\repos\automation_practice\automationpractice\automationpractice\bin\debug\automationpractice.dll" id="7e6b3136-39c9-467c-a7fc-beeea7c17f9e">
+      <TestCategory>
+        <TestCategoryItem TestCategory="SignIn" />
+      </TestCategory>
+      <Execution id="e91d6caa-897d-44ca-8ced-afd444593048" />
+      <TestMethod codeBase="C:\Users\kashizar\source\repos\automation_practice\automationpractice\automationpractice\bin\Debug\automationpractice.dll" adapterTypeName="executor://mstestadapter/v2" className="automationpractice.Classes.SignIn.SignInSignUpPageTestCase" name="login_TC01" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="7e6b3136-39c9-467c-a7fc-beeea7c17f9e" executionId="e91d6caa-897d-44ca-8ced-afd444593048" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>NUnit Adapter 4.1.0.0: Test execution started&#xD;
+Running selected tests in C:\Users\kashizar\source\repos\automation_practice\automationpractice\automationpractice\bin\Debug\automationpractice.dll&#xD;
+   NUnit3TestExecutor discovered 0 of 0 NUnit test cases using Current Discovery mode, Explicit run&#xD;
+NUnit Adapter 4.1.0.0: Test execution complete&#xD;
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>

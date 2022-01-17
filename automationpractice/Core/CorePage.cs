@@ -17,7 +17,7 @@ namespace automationpractice.Core
 {
     public class CorePage
     {
-        public static IWebDriver driver { get; set; }
+       public static IWebDriver driver { get; set; }
         public static IWebDriver SeleniumInitialization(string browser, string url)
         {
             switch (browser)
@@ -47,23 +47,6 @@ namespace automationpractice.Core
 
         }
 
-        ExtentTest test = null;
-        ExtentReports extent = new ExtentReports();
-
-        [OneTimeSetUp]
-        public void ExtentStart()
-        {
-
-            extent = new ExtentReports();
-            var htmlReporter = new ExtentHtmlReporter(@"C:\Users\kashizar\source\repos\automationpractice\automationpractice\report\CorePage.html"); ;
-            extent.AttachReporter(htmlReporter);
-        }
-
-        [OneTimeTearDown]
-        public void ExtentEnd()
-        {
-            extent.Flush();
-
-        }
+        
     }
 }

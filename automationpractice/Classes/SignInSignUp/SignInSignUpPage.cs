@@ -15,16 +15,12 @@ namespace automationpractice.Classes.SignIn
     {
         public object SeleniumExtras { get; private set; }
 
-        public void login(string email, string password) 
-        
+        public void login(string email, string password)
         {
             driver.FindElement(Signinbutton).Click();
             driver.FindElement(useremail).SendKeys(email);
             driver.FindElement(userpassword).SendKeys(password);
             driver.FindElement(Loginbutton).Click();
-            
-
-
         }
 
         public void signout()

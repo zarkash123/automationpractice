@@ -455,6 +455,9 @@
       <Private>True</Private>
       <Private>True</Private>
     </Reference>
+    <Reference Include="TrxerConsole, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\TrxToHtml.TrxerConsole.1.0.0\lib\TrxerConsole.exe</HintPath>
+    </Reference>
     <Reference Include="WebDriver, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Selenium.WebDriver.4.1.0\lib\net47\WebDriver.dll</HintPath>
     </Reference>
@@ -463,12 +466,27 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Cart\Cart.cs" />
+    <Compile Include="Classes\Cart\Cartlocator.cs" />
+    <Compile Include="Classes\Cart\CartTestCase.cs" />
+    <Compile Include="Classes\ContactUs\ClontactUsTestCase.cs" />
+    <Compile Include="Classes\ContactUs\ContactUs.cs" />
+    <Compile Include="Classes\ContactUs\ContactUsLocators.cs" />
+    <Compile Include="Classes\Dresses\Dresses.cs" />
+    <Compile Include="Classes\Dresses\Dresseslocators.cs" />
+    <Compile Include="Classes\Dresses\DressesTestCases.cs" />
     <Compile Include="Classes\SignInSignUp\SignInSignUpPage.cs" />
     <Compile Include="Classes\SignInSignUp\SignInSignUpPageLocators.cs" />
     <Compile Include="Classes\SignInSignUp\SignInSignUpPageTestCase.cs" />
+    <Compile Include="Classes\Womenn\Womenn.cs" />
+    <Compile Include="Classes\Womenn\Womennlocators.cs" />
+    <Compile Include="Classes\Womenn\WomennTestCases.cs" />
     <Compile Include="Core\CorePage.cs" />
     <Compile Include="Core\Initialization.cs" />
     <Compile Include="Core\Keywords.cs" />
+    <Compile Include="datadriven\DatadrivenSQL.cs" />
+    <Compile Include="datadriven\dbcrud.cs" />
+    <Compile Include="datadriven\xml.cs" />
     <Compile Include="TestMethods.cs" />
     <Compile Include="Class1Base.cs" />
     <Compile Include="TestExecution.cs" />
@@ -482,8 +500,12 @@
     <Analyzer Include="..\packages\Microsoft.CodeAnalysis.Analyzers.1.1.0\analyzers\dotnet\cs\Microsoft.CodeAnalysis.Analyzers.dll" />
     <Analyzer Include="..\packages\Microsoft.CodeAnalysis.Analyzers.1.1.0\analyzers\dotnet\cs\Microsoft.CodeAnalysis.CSharp.Analyzers.dll" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="report\" />
+    <Content Include="data.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="report\extentreport\index.html" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -22,7 +22,7 @@ namespace automationpractice.Classes.SignIn
 
         //signout locators
 
-        By UserOut = By.XPath("//a[contains(text(),'Sign out')]");
+        By UserOut = By.XPath("//a[@title='Log me out']");
 
         // signup locators
 
